@@ -92,9 +92,9 @@ with col2:
     else:
         xera = st.number_input("xERA", min_value=0.0, max_value=10.0, value=3.80, step=0.01, help="Expected ERA from Baseball Savant. Enter as shown, e.g. 3.45")
         brl_pa = st.number_input("Barrel% (per batted ball event)", min_value=0.0, max_value=0.20,
-                                  value=0.05, step=0.001, format="%.3f", help="Brl% from Baseball Savant player page. Format as decimal, e.g. 7.1% = 0.071")
+                                  value=0.05, step=0.001, format="%.3f", help="Brl% from Baseball Savant player page. Format as decimal or integer with decimal, e.g. 7.1% or 0.071")
         ev95 = st.number_input("EV95+ (hard-hit rate)", min_value=0.0, max_value=1.0,
-                                value=0.40, step=0.01, format="%.3f")
+                                value=0.40, step=0.01, format="%.3f", help="Hard-Hit Rate from Baseball Savant player page. Format as decimal or integer with decimal, e.g. 7.1% of 0.071")
         ip_pct = st.slider("IP% of full season", 0.0, 1.2, 0.85, 0.01,
                             help="Innings pitched/'full season' benchmark. SP: full season ≈ 180 IP. RP: full season ≈ 65 IP.")
 
